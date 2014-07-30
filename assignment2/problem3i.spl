@@ -1,0 +1,20 @@
+CREATE VIEW queried AS
+SELECT * FROM frequency
+UNION
+SELECT 'q' as docid, 'washington' as term, 1 as count 
+UNION
+SELECT 'q' as docid, 'taxes' as term, 1 as count
+UNION 
+SELECT 'q' as docid, 'treasury' as term, 1 as count
+;
+
+SELECT MAX(sim) FROM (
+  SELECT sum(b.count) AS sim
+  FROM queried as a
+  JOIN queried as b
+  ON a.term = b.term
+  WHERE a.docid = 'q'
+  GROUP BY a.docid, b.docid
+) x;
+
+DROP VIEW queried;

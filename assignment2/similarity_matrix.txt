@@ -1,0 +1,8 @@
+10080_txt_crude|april|1|17035_txt_earn|april|2
+10080_txt_crude|ended|1|17035_txt_earn|ended|1
+10080_txt_crude|inc|1|17035_txt_earn|inc|1
+10080_txt_crude|mln|2|17035_txt_earn|mln|3
+10080_txt_crude|net|1|17035_txt_earn|net|3
+10080_txt_crude|profit|1|17035_txt_earn|profit|4
+10080_txt_crude|reuter|1|17035_txt_earn|reuter|1
+10080_txt_crude|six|1|17035_txt_earn|six|1
